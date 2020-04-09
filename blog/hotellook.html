@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Hotellook. Bioplastic. Портфолио Александра Колесникова.
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link
+		href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,800,300italic,400italic,600italic,700italic,800italic&subset=latin,cyrillic'
+		rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/css/bioplastic.css" />
+	<script type="text/javascript" src="/js/bioplastic.js"></script>
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+	<link rel="icon" type="image/png" href="/img/favicon.png" />
+</head>
+
+<body>
+	<header class="head  inner-head ">
+		<a href="/">
+			<div class="logo"><img src="/img/logo.png" /></div>
+		</a>
+		<div class="hamburger"></div>
+		<div class="phone"><span class="code">+7 (904)</span><span class="number"> 186-18-70</span></div>
+	</header>
+	<div class="sidebar-overlay"></div>
+	<div class="sidebar">
+		<div class="close"></div>
+		<a href="/#portfolio" class="menu">Портфолио</a><br />
+		<a href="/blog" class="menu">Блог</a><br />
+		<a href="/about" class="menu">Обо мне</a><br />
+		<div class="contacts">
+			<h6>электронная почта:</h6>
+			<a href="mailto:iamsmile110@gmail.com">iamsmile110@gmail.com</a>
+			<h6>скайп:</h6>
+			<a href="skype:isssmile1">isssmile1</a>
+			<h6>телеграм:</h6>
+			<a href="t.me/@isssmile">@isssmile</a>
+			<h6>телефон:</h6>
+			<div class="phone"><span class="code">+7 (904)</span><span class="number"> 186-18-70</span></div>
+		</div>
+	</div>
+	<article id="post-content">
+		<h1>Hotellook</h1>
+		<p class="date">
+			<!-- <i class="icon-calendar3"></i> -->
+			December 25th, 2015
+		</p>
+		<p>Сервис, позволяющий находить и сравнивать цены на отели по всему миру, предоставляемые ведущими системами
+			бронирования. Недавно наткнулся на их вакансию с любопытным тестовым заданием:</p>
+
+		<blockquote>
+			<p>Поднять конверсию фильтров и сортировок на <a
+					href="https://search.hotellook.com/?locationId=12193&amp;checkIn=2015-10-15&amp;checkOut=2015-10-18&amp;adults=2&amp;dontRedirectToMobile=1&amp;language=ru-ru¤cy=rub">странице
+					поиска</a>, при этом не потеряв клики на кнопку «Забронировать»</p>
+		</blockquote>
+
+		<p>Направление верное, ведь задача сервиса - довести пользователя до бронирования номера в отеле одной из
+			парнерских систем. Чем точнее он настроит фильтры - тем больше результаты поиска будут соответствовать его
+			ожиданиям и больше будет вероятность бронирования.</p>
+
+		<p>Сама подопытная страница:
+			<div class="chocolat-parent"><a class="chocolat-image" href="/assets/blog/compare_1.jpg"><img width="100%"
+						src="/assets/blog/compare_1.jpg" /></a></div>
+		</p>
+
+		<p>Заодно я собираюсь исправить мелкие недочеты, не касающиеся основной задачи.</p>
+
+		<h4>Язык и вход</h4>
+
+		<p>
+			<div class="compare">
+				<img src="/assets/blog/1_before.jpg">
+				<img src="/assets/blog/1_after.jpg">
+			</div>
+		</p>
+
+		<p>Левая сторона блока пустая, зато справа элементы пытаются как можно теснее прижаться друг к другу. Наводим
+			порядок. Переключатель языка переезжает влево. Валюте тут вообще делать нечего, ее место в фильтрах, рядом
+			со стоимостью. «Войти», кроме угрозы авторизации через любую соцсеть, больше ничего не делает. «Любую
+			соцсеть» пропустим мимо ушей, переименуем в «войти через» и добавим несколько иконок соцсетей.</p>
+
+		<h4>Настройки и фильтры</h4>
+
+		<p>
+			<div class="compare">
+				<img src="/assets/blog/2_before.jpg">
+				<img src="/assets/blog/2_after.jpg">
+			</div>
+		</p>
+
+		<p>Настройки - это выбор города, даты заезда-отъезда и количество гостей. Хорошо видны, но глаза не мозолят,
+			вместе с логотипом формируют какую-никакую шапку сайта.</p>
+
+		<p>А вот с фильтрами не все так гладко. Люди давно привыкли к тому, что фильтры - это вертикальный блок в левой
+			или в правой колонке. И это правильно: мониторы широкоформатные, по бокам много неиспользуемого места.
+			Горизонтальную полосу могут просто не заметить, нет ощущения связанности блока фильтров и центральной
+			колонки с поисковой выдачей. У горизонтального блока хуже читаемость, поля могут спрыгивать на вторую
+			строчку, посмотрев на блок нельзя понять какие параметры выставлены, приходится делать дополнительный клик
+			по каждому полю.</p>
+
+		<p>В общем, оригинально, но малофункционально. Надо приводить блок фильтров к нормальному виду. Левая и
+			центральная колонки должны независимо скроллиться. Блок фильтров привязан к окну браузера и всегда виден. В
+			фильтрах стараемся по максимуму использовать слайдеры, они проще и наглядней.</p>
+
+		<h4>Сортировка</h4>
+
+		<p>
+			<div class="compare">
+				<img src="/assets/blog/3_before.jpg">
+				<img src="/assets/blog/3_after.jpg">
+			</div>
+		</p>
+
+		<p>Собрал все варианты сортировки в один выпадающий список и добавил количество найденных отелей. Отвязал от
+			общего списка сортировку по скидкам и вынес ее наружу. Вещь полезная, надо ее сразу показать пользователю.
+		</p>
+
+		<h4>Карточка отеля</h4>
+
+		<p>
+			<div class="compare">
+				<img src="/assets/blog/4_before.jpg">
+				<img src="/assets/blog/4_after.jpg">
+			</div>
+		</p>
+
+		<p>Понятно, для чего в карточке сразу идет цена и кнопка «Бронировать», это увеличивает количество кликов. Но
+			сколько кликов реально конвертируются в бронь? Описание отеля и фотографии задвигаются на второй план,
+			интерфейс принуждает пользователя бронировать отель, видя только цену. Это очень агрессивная политика, никто
+			не будет покупать так настойчиво навязываемого кота в мешке.</p>
+
+		<p>Надо поменять порядок блоков. Люди просматривают страницу сверху-вниз и слева-направо. поэтому слева надо
+			поставить фотографию для привлечения внимания, а справа кнопку «Бронировать» как финальный Call To Action.
+			Получилось в лучших традициях AIDA.</p>
+
+		<p>Кнопку я переименовал из «Бронировать» в «Бронирование», так она стала выглядеть менее агрессивной.</p>
+
+		<p>&#8220;Расстояние от отеля до центра города&#8221; совершенно бесполезная вещь без знания реальных размеров
+			города. Гораздо лучше поделить города на зоны: центр, город, окраину, загород и показывать их.</p>
+
+		<p>Вот что получилось в результате:
+			<div class="compare">
+				<img src="/assets/blog/compare_1.jpg">
+				<img src="/assets/blog/compare_2.jpg">
+			</div>
+		</p>
+
+		<p>Это то, что можно было выжать из фильтров и контента текущей страницы. Дальше можно сосредоточиться на
+			сегментации пользователей и повышении информативности карточки отеля. Вопрос «Чем собираетесь заниматься?» с
+			несколькими вариантами ответа, к примеру «Пляжный отдых» или «Деловая поездка» позволят показывать каждой
+			группе пользователей свою, преднастроенную группу фильтров и менять контент карточки отеля. Самый простой
+			пример: людям, выбравшим пляжный отдых показывать в карточке расстояние от отеля до моря, а не до центра
+			города.</p>
+	</article>
+	<div id="disqus_wrapper">
+		<div id="disqus_thread"></div>
+	</div>
+	<script>
+		/**
+		* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+		* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+		*/
+		/*
+		var disqus_config = function () {
+		this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+		this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+		};
+		*/
+		(function () { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+
+			s.src = '//bioplastic.disqus.com/embed.js';
+
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments
+			powered by Disqus.</a></noscript>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.compare').twentytwenty();
+			$('.chocolat-parent').Chocolat({
+				// container: '.chocolat-parent',
+				imageSize: 'native',
+				linkImages: false,
+				displayAsALink: false
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			// $('#fullpage').fullpage({
+			// 	anchors:['', 'portfolio'],
+			// 	scrollOverflow: true,
+			// 	scrollingSpeed: 500,
+			// 	fitToSectionDelay: 3000,
+			// 	onLeave: function(index, nextIndex, direction){
+			// 		if (nextIndex == 1) {
+			// 			return false;
+			// 			//$('.head').removeClass('inner-head');
+			// 		} else {
+			// 			$('.head').addClass('inner-head');
+			// 		}
+			// 	}
+			// });
+			$(".hamburger, .close").click(function () {
+				$(".sidebar").toggleClass("show");
+				$(".sidebar-overlay").toggleClass("show");
+			});
+		});
+	</script>
+</body>
+
+</html>

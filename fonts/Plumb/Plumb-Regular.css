@@ -1,0 +1,12 @@
+/* Webfont: Plumb-Regular */@font-face {
+    font-family: 'Plumb';
+    src: url('Plumb-Regular.eot'); /* IE9 Compat Modes */
+    src: url('Plumb-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Plumb-Regular.woff') format('woff'), /* Modern Browsers */
+         url('Plumb-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Plumb-Regular.svg#Plumb-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
